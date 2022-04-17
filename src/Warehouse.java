@@ -3,10 +3,17 @@ import java.util.Scanner;
 public class Warehouse {
     private String[] product;
     int station;
-    public void init(String[] product,int station){
+    Warehouse(){
+
+    }
+    Warehouse(String[] product){
+        this.product = product;
+    }
+    Warehouse(String[] product,int station){
         this.product = product;
         this.station = station;
     }
+
     public void enter(){
         Scanner sc = new Scanner(System.in);
         System.out.println("Vvedite product: ");

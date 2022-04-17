@@ -4,7 +4,14 @@ public class Owner {
     private Fio fio;
     private int income;
     private int expenses;
-    public void init(Fio fio,int income,int expenses){
+
+    Owner(){
+        this.fio = new Fio();
+    }
+    Owner(Fio fio){
+        this.fio = fio;
+    }
+    Owner(Fio fio,int income,int expenses){
         this.fio = fio;
         this.income = income;
         this.expenses = expenses;

@@ -4,7 +4,14 @@ public class Boxoffice {
     private Fio fio;
     private int workers;
     private int count;
-    public void init(Fio fio,int workers,int count){
+
+    Boxoffice(){
+        this.fio = new Fio();
+    }
+    Boxoffice(int workers){
+        this.workers = workers;
+    }
+    Boxoffice(Fio fio,int workers,int count){
         this.fio = fio;
         this.workers = workers;
         this.count = count;

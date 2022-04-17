@@ -4,11 +4,18 @@ public class Fio {
     private String name;
     private String surname;
     private String patronymic;
-    public void init(String name,String surname, String patronymic){
+    Fio(){
+    }
+    Fio(String surname){
+        this.surname = surname;
+    }
+    Fio(String name,String surname, String patronymic){
         this.name = name;
         this.surname = surname;
         this.patronymic = patronymic;
     }
+
+
     public void enter(){
         Scanner sc = new Scanner(System.in);
         System.out.println("Vvedite name: ");

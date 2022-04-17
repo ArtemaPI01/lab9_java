@@ -6,17 +6,22 @@ public class Shop {
     private String type;
     private String street;
     private String time;
-    public void init(String name,String type, String street, String time){
-        this.name = name;
-        this.type = type;
-        this.street = street;
-        this.time = time;
-    }
     static {
         counter = 0;
     }
     Shop(){
         counter++;
+    }
+    Shop(String name,String type, String street, String time){
+        counter++;
+        this.name = name;
+        this.type = type;
+        this.street = street;
+        this.time = time;
+    }
+    Shop(String time){
+        counter++;
+        this.time = time;
     }
     public static int Getcounter(){
         return counter;
